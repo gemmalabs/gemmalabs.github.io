@@ -1,0 +1,100 @@
+:root {
+  --color-peach: #eed3b3;
+  --color-blue: #304a5a;
+  --color-red: #e32c2b;
+}
+
+@font-face {
+  font-family: "SangBleuSunrise";
+  src: url("SangBleuSunrise-Regular-WebXL.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SangBleuSunrise";
+  src: url("SangBleuSunrise-Medium-WebXL.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CentraNo2";
+  src: url("CentraNo2-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CentraNo2";
+  src: url("CentraNo2-Medium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SairaStencilOne";
+  src: url("SairaStencilOne-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+a {
+  font-family: "CentraNo2", sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "SangBleuSunrise", serif;
+}
+header, footer {
+  background: var(--color-blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 112px;
+  flex-basis: 112px;
+  padding: 32px;
+}
+header {
+  justify-content: center;
+}
+footer {
+  justify-content: space-between;
+}
+footer a {
+  text-transform: uppercase;
+}
+.header-logo, .footer-logo {
+  height: 100%
+}
+content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-peach);
+  color: var(--color-blue);
+  padding: 32px;
+}
+.main-heading {
+  font-family: "SairaStencilOne", sans-serif;
+  color: var(--color-red);
+  font-size: 45px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+}
+.subheading {
+  text-align: center;
+  font-size: 22px;
+}
+
+
